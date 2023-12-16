@@ -1,0 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Galada&family=Grand+Hotel&family=Itim&family=Mooli&family=Style+Script&family=Stylish&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
