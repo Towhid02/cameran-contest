@@ -1,14 +1,16 @@
-import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
+import { AuthContext } from "../Provider/AuthProvider";
+import SocialLogin from "../Components/SocialLogIn";
+import { Helmet } from "react-helmet";
 
 
 const LogIn = () => {
+  const {signIn} = useContext(AuthContext)
+  const navigate = useNavigate()
 
-    const handleLogin = event => {
-
-        const {signIn} = useContext(AuthContext)
-        const navigate = useNavigate();
-
+    const handleLogin = event => { 
         event.preventDefault();
         const form = event.target;
         const email = form.email.value;
@@ -27,44 +29,53 @@ const LogIn = () => {
                         popup: 'animate__animated animate__fadeOutUp'
                     }
                 });
-                navigate(from, { replace: true });
+                navigate();
             })
     }
     return (
-        <div>
-             <div className="hero min-h-screen bg-base-200">
-  <div className="hero-content flex-col lg:flex-row">
-    <div className="text-center md:w-1/2 lg:text-left">
-      <h1 className="text-5xl font-bold">Login now!</h1>
-      <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-    </div>
-    <div className="card md:w-1/2 max-w-sm shadow-2xl bg-base-100">
-    <form onSubmit={handleLogin} className="card-body">
-        <div className="form-control">
-          <label className="label">
-            <span className="label-text">Email</span>
-          </label>
-          <input type="email"  name="email" placeholder="email" className="input input-bordered" required />
-        </div>
-        <div className="form-control">
-          <label className="label">
-            <span className="label-text">Password</span>
-          </label>
-          <input type="password" name="password" placeholder="password" className="input input-bordered" required />
-          <label className="label">
-            <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
-          </label>
-        </div>
-        <div className="form-control mt-6">
-          <input className="btn btn-primary" type="submit" value="Login" />
-        </div>
-      </form>
-      <p><small>New Here? <Link to={"/signUp"}>Sign Up</Link></small></p>
-      {/* <SocialLogin></SocialLogin> */}
-    </div>
-  </div>
+      <>
+      <Helmet>
+                <title>Cameran | SignIn</title>
+            </Helmet>
+            <div>
+
+<div className="hero min-h-screen bg-white ">
+
+<div className="hero-content flex-col lg:flex-row mt-20">
+<div className="text-center md:w-1/2 lg:text-left">
+<h1 className="text-5xl font-bold font-moli  text-red-900">Login now!</h1>
+<img src="../../public/Images/Mobile login-bro.png" alt="" />
 </div>
-        </div>
+<div className="card md:w-1/2 max-w-sm shadow-2xl bg-red-200">
+<form onSubmit={handleLogin} className="card-body">
+
+<div className="form-control">
+<label className="label">
+<span className="label-text text-xl font-moli text-red-700">Email</span>
+</label>
+<input type="email"  name="email" placeholder="email" className="input input-bordered" required />
+</div>
+<div className="form-control">
+<label className="label">
+<span className="label-text text-xl font-moli text-red-700">Password</span>
+</label>
+<input type="password" name="password" placeholder="password" className="input input-bordered" required />
+<label className="label">
+<a href="#" className="label-text-alt link link-hover  font-moli text-red-700">Forgot password?</a>
+</label>
+</div>
+<div className="form-control mt-4">
+<input className="btn text-white bg-gradient-to-r from-red-500 via-red-600 to-red-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 dark:shadow-lg dark:shadow-red-800/80 font-medium rounded-lg text-xl px-5 py-2.5 text-center me-2 mb-2" type="submit" value="Login" />
+</div>
+</form>
+<p className=" font-moli text-red-700 ">New Here? <Link to={"/signUp"}>Sign Up</Link></p>
+<SocialLogin></SocialLogin>
+</div>
+</div>
+</div>
+</div>
+      </>
+       
     );
 };
 

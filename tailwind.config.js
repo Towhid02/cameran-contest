@@ -11,13 +11,16 @@ export default {
         galada : "'Galada', cursive",
         grand : "'Grand Hotel', cursive",
         itim : "'Itim', cursive",
-        mooli : "'Mooli', sans-serif",
+        moli : "'Mooli', sans-serif",
         script : "'Style Script', cursive",
         deco : "'Stylish', serif"
 
       },
       backgroundImage : {
         'navBg': "url(../src/assets/nav.png)",
+        'about1': "url(../../public/Images/about1.jpg)",
+        'about2': "url(../../public/Images/about2.jpg)",
+        'about3': "url(../../public/Images/about3.jpg)",
         'bannerBg': "url(../../public/Images/one-person-holding-camera-photographing-mountain-peak-generated-by-ai.jpg)",
         
       }
