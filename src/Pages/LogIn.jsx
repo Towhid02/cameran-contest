@@ -4,6 +4,7 @@ import Swal from "sweetalert2";
 import { AuthContext } from "../Provider/AuthProvider";
 import SocialLogin from "../Components/SocialLogIn";
 import { Helmet } from "react-helmet";
+import login from "../../public/assets/Mobile login-bro.png"
 
 
 const LogIn = () => {
@@ -41,10 +42,10 @@ const LogIn = () => {
 
 <div className="hero min-h-screen bg-white ">
 
-<div className="hero-content flex-col lg:flex-row mt-20">
+<div className="hero-content flex flex-col md:flex-row mt-20">
 <div className="text-center md:w-1/2 lg:text-left">
 <h1 className="text-5xl font-bold font-moli  text-red-900">Login now!</h1>
-<img src="../../public/Images/Mobile login-bro.png" alt="" />
+<img src={login} alt="" />
 </div>
 <div className="card md:w-1/2 max-w-sm shadow-2xl bg-red-200">
 <form onSubmit={handleLogin} className="card-body">

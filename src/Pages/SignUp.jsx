@@ -6,6 +6,7 @@ import { AuthContext } from "../Provider/AuthProvider";
 import Swal from "sweetalert2";
 import SocialLogin from "../Components/SocialLogIn";
 import UseAxiosPublic from "../Hook/UseAxiosPublic";
+import signup from "../../public/assets/Mobile login-pana.png"
 
 const SignUp = () => {
     const axiosPublic = UseAxiosPublic();
@@ -42,8 +43,6 @@ const SignUp = () => {
                     navigate("/");
                     }
                     })
-
-
                     })
                     .catch(error => console.log(error))
             })
@@ -55,10 +54,10 @@ const SignUp = () => {
                 <title>Cameran | Sign Up</title>
             </Helmet>
             <div className="hero min-h-screen  bg-white">
-                <div className="hero-content flex-col lg:flex-row-reverse mt-20 px-10">
+                <div className="hero-content flex-col md:flex-row-reverse mt-20 px-10">
                     <div className="text-center lg:text-left">
                         <h1 className="text-5xl font-bold text-red-800 font-itim text-center">Sign up now!</h1>
-                       <img src="../../public/Images/Mobile login-pana.png" alt="" />
+                       <img src={signup} alt="" />
                     </div>
                     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-red-300">
                         <form onSubmit={handleSubmit(onSubmit)} className="card-body">
