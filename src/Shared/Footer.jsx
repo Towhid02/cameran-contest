@@ -1,4 +1,4 @@
-import logo from "../../public/Images/instagram-red.svg"
+import logo from "../../public/assets/instagram-red.svg"
 const Footer = () => {
     return (
         <footer>

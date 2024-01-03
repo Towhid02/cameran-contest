@@ -7,7 +7,7 @@ const PopularContests = ({items}) => {
     const {_id, name, image, participantCount, description} = items;
     return (
         <div>
-            <div className="max-w-sm bg-white border border-red-300 rounded-lg shadow dark:bg-gray-800 dark:border-red-300">
+            <div className="max-w-sm  bg-white border border-red-300 rounded-lg shadow dark:bg-gray-800 dark:border-red-300">
     <a href="#">
         <img className="rounded-t-lg h-60 w-full" src={image} alt="" />
     </a>

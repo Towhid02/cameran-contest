@@ -18,21 +18,21 @@ export default {
       },
       backgroundImage : {
         'navBg': "url(../src/assets/nav.png)",
-        'about1': "url(../../public/Images/about1.jpg)",
-        'about2': "url(../../public/Images/about2.jpg)",
-        'about3': "url(../../public/Images/about3.jpg)",
-        'bannerBg': "url(../../public/Images/one-person-holding-camera-photographing-mountain-peak-generated-by-ai.jpg)",
-        'aboutBg': "url(../../public/Images/slide_2.jpg)",
-        'bnr1': "url(../../public/Images/fig.jpg)",
-        'bnr2': "url(../../public/Images/all.jpg)",
-        'bnr3': "url(../../public/Images/mbl.jpg)",
-        'bnr4': "url(../../public/Images/wild.jpg)",
-        'bnr5': "url(../../public/Images/woman.jpg)",
-        'gallery': "url(../../public/Images/gal.jpg)",
+        'about1': "url(../public/assets/about1.jpg)",
+        'about2': "url(../../public/assets/about2.jpg)",
+        'about3': "url(../public/assets/about3.jpg)",
+        'bannerBg': "url(../public/assets/one-person-holding-camera-photographing-mountain-peak-generated-by-ai.jpg)",
+        'aboutBg': "url(../public/assets/slide_2.jpg)",
+        'bnr1': "url(../public/assets/fig.jpg)",
+        'bnr2': "url(../public/assets/all.jpg)",
+        'bnr3': "url(../public/assets/mbl.jpg)",
+        'bnr4': "url(../public/assets/wild.jpg)",
+        'bnr5': "url(../public/assets/woman.jpg)",
+        'gallery': "url(../public/assets/gal.jpg)",
         
       }
     },
   },
-  plugins: [require("daisyui", "flowbite/plugin")],
+  plugins: [require("daisyui"),  require('flowbite/plugin')],
 }
 

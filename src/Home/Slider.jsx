@@ -1,9 +1,9 @@
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
-import img1 from "../../public/Images/camera.svg"
-import img2 from "../../public/Images/panorama.svg"
-import img3 from "../../public/Images/image.svg"
-import img4 from "../../public/Images/video.svg"
+import img1 from "../../public/assets/camera.svg"
+import img2 from "../../public/assets/panorama.svg"
+import img3 from "../../public/assets/image.svg"
+import img4 from "../../public/assets/video.svg"
 
 const Slider = () => {
     const [sliderRef] = useKeenSlider({

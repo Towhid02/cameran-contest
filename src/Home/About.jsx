@@ -1,8 +1,8 @@
 /* eslint-disable no-undef */
-import img1 from "../../public/Images/about1.jpg"
-import img2 from "../../public/Images/about2.jpg"
-import img3 from "../../public/Images/about3.jpg"
-import img4 from "../../public/Images/about4.jpg"
+import img1 from "../../public/assets/about1.jpg"
+import img2 from "../../public/assets/about2.jpg"
+import img3 from "../../public/assets/about3.jpg"
+import img4 from "../../public/assets/about4.jpg"
 import SectionTitle from "../Shared/SectionTitle";
 
 

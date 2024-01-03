@@ -1,11 +1,11 @@
 import { Helmet } from "react-helmet";
 import UseContest from "../Hook/UseContest";
 import Winners from "../Components/Winners";
-import img1 from "../../public/Images/young-asian-man-with-camera-isolated-white-background-photographer-concept.jpg"
-import img2 from "../../public/Images/positive-female-tourist-with-photo-camera-travel-backpack.jpg"
-import img3 from "../../public/Images/young-stylish-photographer-holds-professional-camera-taking-photos.jpg"
-import img4 from "../../public/Images/medium-shot-specialized-photographer-working-studio.jpg"
-import img5 from "../../public/Images/young-woman-black-t-shirt-with-camera.jpg"
+import img1 from "../../public/assets/young-asian-man-with-camera-isolated-white-background-photographer-concept.jpg"
+import img2 from "../../public/assets/positive-female-tourist-with-photo-camera-travel-backpack.jpg"
+import img3 from "../../public/assets/young-stylish-photographer-holds-professional-camera-taking-photos.jpg"
+import img4 from "../../public/assets/medium-shot-specialized-photographer-working-studio.jpg"
+import img5 from "../../public/assets/young-woman-black-t-shirt-with-camera.jpg"
 import { Carousel } from 'flowbite-react';
 import SectionTitle from "../Shared/SectionTitle";
 
