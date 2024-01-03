@@ -9,8 +9,8 @@ const Banner = () => {
         <div>
         <div className="hero min-h-screen bg-bannerBg w-full h-full  bg-center n" >
         <div className="hero-overlay bg-opacity-20"></div>
-        <div className="hero-content text-center text-neutral-content">
-        <div className="max-w-md">
+        <div className="hero-content text-center text-neutral-content" data-aos="flip-down">
+        <div className="max-w-md " >
         <h1 className="mb-5 text-6xl font-bold text-white"> <span className=" font-galada ">Cameran</span> <br />
         Photo Contest </h1>
         <p className="mb-5 text-2xl text-white">Capture. Create. Compete. Our Photography Contest is your canvas. Submit your best shots, compete with fellow photographers, and win recognition. Unleash your talent now!</p>

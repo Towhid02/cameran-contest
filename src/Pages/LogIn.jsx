@@ -29,7 +29,7 @@ const LogIn = () => {
                         popup: 'animate__animated animate__fadeOutUp'
                     }
                 });
-                navigate();
+                navigate("/");
             })
     }
     return (

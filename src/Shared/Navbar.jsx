@@ -7,9 +7,9 @@ const Navbar = () => {
   const {user, logOut} = useContext(AuthContext)
     const links = <>
             <li ><Link to="/">HOME</Link></li>
-            <li><Link to="/menus">MENU</Link></li>   
-            <li><Link to="/secret">Secret</Link></li>      
-            <li><Link to="/order/salad">ORDER</Link></li>   
+            <li><Link to="/contests">Contests</Link></li>   
+            <li><Link to="/gallery">Gallery</Link></li>      
+            <li><Link to="/winner">Winners</Link></li>   
      
     </>
     return (
@@ -48,8 +48,8 @@ const Navbar = () => {
                   </div>
                 </label>
                 <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
-                <li><Link to={"/addOrder"}>Orders</Link></li>
-                  <li><Link to={"/addFood"}>Add Food</Link></li>
+                <li><Link to={"/dashboard"}>Dashboard</Link></li>
+                  
                   <li><a   onClick={()=>logOut()}>Logout</a></li>
                 </ul>
               </div>
