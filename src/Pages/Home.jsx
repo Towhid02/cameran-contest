@@ -1,8 +1,6 @@
 import { Helmet } from "react-helmet";
 import Banner from "../Components/Banner";
-
-import Slider from "../Components/Slider";
-
+import Slider from "../Home/Slider";
 import About from "../Home/About";
 import Contest from "../Home/Contest";
 import Features from "../Home/Features";

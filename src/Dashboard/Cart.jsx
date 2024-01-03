@@ -3,6 +3,7 @@ import { FaTrashAlt } from "react-icons/fa";
 import UseAxiosSecure from "../Hook/UseAxiosSecure";
 import UseCart from "../Hook/UseCart";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 
 const Cart = () => {
@@ -40,6 +41,9 @@ const Cart = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Cameran | Participated Contests</title>
+            </Helmet>
              <div className="flex justify-evenly mb-8">
                 <h2 className="text-4xl">Items: {cart.length}</h2>
                 <h2 className="text-4xl">Total Price: {totalPrice}</h2>

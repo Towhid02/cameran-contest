@@ -3,6 +3,7 @@ import useAuth from "../Hook/UseAuth";
 import UseAxiosSecure from "../Hook/UseAxiosSecure";
 import { FaBook, FaDollarSign, FaUsers } from 'react-icons/fa';
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, PieChart, Pie, Legend } from 'recharts';
+import { Helmet } from "react-helmet";
 
 const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', 'red', 'pink'];
 const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
@@ -61,6 +62,9 @@ const AdminHome = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Cameran | Admin</title>
+            </Helmet>
              <h2 className="text-3xl">
                 <span>Hi, Welcome </span>
                 {

@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import useAuth from "../Hook/UseAuth";
 
 
@@ -5,6 +6,10 @@ import useAuth from "../Hook/UseAuth";
 const UserHome = () => {
     const {user } = useAuth();
     return (
+        <div>
+            <Helmet>
+                <title>Cameran | User Home</title>
+            </Helmet>
         <div>
         <h2 className="text-3xl">
             <span>Hi, Welcome</span> <br />
@@ -25,6 +30,7 @@ const UserHome = () => {
                 
             }
         </h2>
+    </div>
     </div>
     );
 };

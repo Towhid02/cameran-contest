@@ -4,6 +4,7 @@ import UseAxiosSecure from "../Hook/UseAxiosSecure";
 import UseAxiosPublic from "../Hook/UseAxiosPublic";
 import Swal from "sweetalert2";
 import SectionTitle from "../Shared/SectionTitle";
+import { Helmet } from "react-helmet";
 const image_hosting_key = import.meta.env.VITE_Image_Hosting_Key;
 const image_hosting_api = `https://api.imgbb.com/1/upload?key=${image_hosting_key}`;
 
@@ -52,7 +53,10 @@ const UpdateContests = () => {
     
     return (
         <div>
-             <SectionTitle heading="Update an Contest" ></SectionTitle>
+            <Helmet>
+                <title>Cameran | Update Contests</title>
+            </Helmet>
+             <SectionTitle heading="Update Contest" ></SectionTitle>
             <div>
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div className="form-control w-full my-6">

@@ -4,6 +4,7 @@ import UseContest from "../Hook/UseContest";
 import { Link } from "react-router-dom";
 import { FaEdit, FaTrashAlt } from "react-icons/fa";
 import SectionTitle from "../Shared/SectionTitle";
+import { Helmet } from "react-helmet-async";
 
 
 const ManageContests = () => {
@@ -40,6 +41,9 @@ const ManageContests = () => {
     }
     return (
         <div>
+            <Helmet>
+                <title> Cameran | Manage Contests</title>
+            </Helmet>
             <SectionTitle heading="Manage Contests"></SectionTitle>
 <div>
 <div className="overflow-x-auto">

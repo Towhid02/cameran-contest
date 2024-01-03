@@ -35,7 +35,7 @@ const LogIn = () => {
     return (
       <>
       <Helmet>
-                <title>Cameran | SignIn</title>
+                <title>Cameran | Log In</title>
             </Helmet>
             <div>
 

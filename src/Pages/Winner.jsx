@@ -27,7 +27,9 @@ const Winner = () => {
       </Carousel>
 
             </div>
-            
+            <Helmet>
+                <title>Cameran | Winners</title>
+            </Helmet>
             <div>
                 <SectionTitle
             heading="Winners Of Last year"
