@@ -52,7 +52,7 @@ import UserHome from "../Dashboard/UserHome";
             element:<AllContests></AllContests>
         },
         {
-            path: "/details/:id",
+            path: "details/:id",
             element:<Details></Details>,
             loader: ({params}) => fetch(`https://contest-server-six.vercel.app/contests/${params.id}/`)
       

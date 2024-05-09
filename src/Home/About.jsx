@@ -16,13 +16,13 @@ const About = () => {
         heading="About"
         >
         </SectionTitle>
-        <div className=" flex flex-col md:flex-row justify-center items-center gap-5 px-8 py-5">
+        <div className=" flex flex-col md:flex-row justify-center mx-auto items-center gap-5 px-8 py-5">
             <div className=" flex-1">
-                <p className="text-2xl text-left px-5  text-red-100">
+                <p className="text-2xl text-left px-12  text-red-100">
                 Creating a captivating and effective photography website is essential for showcasing your talent and attracting potential clients or followers. A well-designed website not only serves as a visual portfolio but also reflects your unique style and professionalism. 
                 </p>
             </div>
-            <div className=" flex-1 h-96 carousel carousel-vertical rounded-box" data-aos="zoom-in">
+            <div className="  w-80  h-80 gap-20 carousel carousel-vertical rounded-box" data-aos="zoom-in">
   <div className="carousel-item h-full">
     <img src={img1}/>
   </div> 

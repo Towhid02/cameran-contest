@@ -5,15 +5,23 @@ import img2 from "../../public/assets/panorama.svg"
 import img3 from "../../public/assets/image.svg"
 import img4 from "../../public/assets/video.svg"
 
+const animation = { duration: 25000, easing: (t) => t }
+
 const Slider = () => {
     const [sliderRef] = useKeenSlider({
         loop: true,
-        mode: "free",
-        slides: { origin: "center", perView: 1.5, spacing: 5 },
-        range: {
-          min: -5,
-          max: 5.5,
-        },
+        renderMode: "performance",
+        drag: false,
+        slides: { origin: "center", perView: 2, spacing: 5 },
+        created(s) {
+            s.moveToIdx(5, true, animation)
+          },
+          updated(s) {
+            s.moveToIdx(s.track.details.abs + 5, true, animation)
+          },
+          animationEnded(s) {
+            s.moveToIdx(s.track.details.abs + 5, true, animation)
+          },
       })
     return (
         <div className="px-2 py-4">
